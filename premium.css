@@ -1,0 +1,167 @@
+body {
+  background-image: url(https://img.tsn.ua/cached/961/tsn-e4d2bbace79d9196864837254e47d00a/thumbs/x/7b/23/36381f3246cb266ef6cfb95c42bb237b.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.text {
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgb(255, 230, 5);
+  font-family: cursive;
+  width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий фон */
+  text-align: center;
+  border-radius: 15px; /* Заокруглені краї */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.text h2, .text ul {
+  margin: 0;
+  padding: 0;
+}
+
+.text ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.text ul li {
+  margin-bottom: 10px;
+}
+
+.navigation li {
+  margin-right: 25px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navigation {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.7); /* Темний напівпрозорий фон */
+  width: 100%;
+  position: fixed;
+  transition: all .5s;
+  z-index: 1;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header img {
+  height: 50px; /* Розмір лого */
+  margin-right: 20px; /* Відступ справа від лого */
+}
+
+.navigation a {
+  margin-right: 40px;
+  vertical-align: middle;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.navigation a:hover {
+  transition: 1.2s;
+  color: darkred;
+}
+
+.title {
+  color: whitesmoke;
+  font-family: Arial, sans-serif;
+  font-size: 34px;
+  text-align: center;
+}
+
+.glow-on-hover {
+  width: 200px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: black;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px; /* Зменшуємо розмір шрифту */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(54, 5, 54);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+footer {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+}

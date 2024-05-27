@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootcamp.css">
+    <title>BOOTCAMP обладнання</title>
+</head>
+<body>
+<br>
+    <div class="header">
+        <div class="container">
+          <div class="header-line">
+            <div class="navigation">
+              <ul>
+                <li><a href="index.html" target="_blank">Назад</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script>
+      window.onscroll = function() {
+        scrollFunction()
+      } 
+      function scrollFunction() {
+        let scrollPos = 200;
+        let header = document.getElementById('header')
+        if(document.body.scrollTop > scrollPos || document.documentElement.scrollTop > scrollPos) {
+          header.classlist.add('active');
+        } else {
+          header.classlist.remove('active')
+        }
+      }
+    </script>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="text">
+    <h2>BOOTCAMP:</h2>
+    <ul>
+      <li>Монітор: Samsung 27" C27RG50FQI (240Гц)</li>
+      <li>Процесор: AMD Ryzen 7 5800x 3.8(4.7)GHz</li>
+      <li>Відеокарта: Gigabyte GeForce RTX 4070 Gaming 3X 12288Mb</li>
+      <li>Оперативна пам'ять: HyperX DDR4 32GB 3200Mhz Fury Black</li>
+      <li>Ігрові крісла: Cougar Armor S Black</li>
+      <li>Ігрова мишка: HATOR Pulsar 2 PRO</li>
+      <li>Ігрова клавіатура: HATOR Starfall Outemu Red</li>
+      <li>Ігрова гарнітура: HATOR Hypergang 2</li>
+      <li>Ігрова поверхня: Evolve OnePad</li>
+    </ul>
+</div>
+
+<footer>
+    <p>©made by basedslaw/Babych.K</p>
+  </footer>
+
+</body>
+</html>
